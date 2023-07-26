@@ -1,0 +1,19 @@
+{
+  "name": "track-employee",
+  "version": "1.0.0",
+  "description": "# Description This application uses MySql to create a database that will track employees, roles, and departments.  The user will be able to view all employees, roles, and departments.  The user will also be able to add employees, roles, and departments.  The user will also be able to update an employee's role.  This application uses MySql and  Inquirer.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "inquirer": "^9.2.8",
+    "mysql2": "^3.5.2"
+  }
+}
