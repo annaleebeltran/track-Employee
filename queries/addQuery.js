@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const db = require("../db/connection");
 
 
-function addDept() {
+function addDeptartments() {
   inquirer
     .prompt([
       {
@@ -28,7 +28,7 @@ function addDept() {
     });
 }
 
-function addRole() {
+function addRoles() {
   db.query("SELECT DISTINCT id, dept_name FROM department", (err, results) => {
     if (err) {
       console.log(err);
@@ -77,7 +77,7 @@ function addRole() {
   });
 }
 
-function addEmployee() {
+function addEmployees() {
   db.query("SELECT DISTINCT id, title FROM role", (err, results) => {
     if (err) {
       console.log(err);
@@ -151,4 +151,4 @@ function addEmployee() {
   });
 }
 
-module.exports = { addDept, addRole, addEmployee };
+module.exports = { addDeptartments, addRoles, addEmployees };

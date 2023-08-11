@@ -1,7 +1,7 @@
 const db = require("../db/connection");
 
 // These functions selects all departments from the database and displays them in a table.
-function allDept() {
+function allDeptartments() {
   db.query("SELECT * FROM department", (err, results) => {
     if (err) {
       console.log(err);
@@ -41,4 +41,4 @@ function allEmployees() {
   );
 }
 
-module.exports = { allDept, allRoles, allEmployees };
+module.exports = { allDeptartments, allRoles, allEmployees };

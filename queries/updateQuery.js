@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const db = require("../db/connection");
 
 
-function updateEmployee() {
+function updateEmployees() {
   db.query("SELECT DISTINCT id, title FROM role", (err, results) => {
     if (err) {
       console.log(err);
@@ -64,4 +64,4 @@ function updateEmployee() {
   });
 }
 
-module.exports = { updateEmployee };
+module.exports = { updateEmployees };

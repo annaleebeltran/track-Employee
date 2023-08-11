@@ -1,4 +1,4 @@
-const mysql = require("mysq12");
+const mysql = require("mysql");
 
 require("dotenv").config();
 
@@ -11,3 +11,5 @@ const db = mysql.createConnection(
   },
   console.log("Connected to the Employee_db database")
 );
+
+module.exports = db;
